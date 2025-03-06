@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS INTERNO -> TAG style no head -->
+<style>
+     /* existem 3 formas de aplicar o css em elementos
+    TAG: utilizando o nome da TAG ex: b{...}
+    .classe: criamos uma classe para reaproveitar 
+    o mesmo css em vários locais ex: .azul{...}
+    #id: definimos um id para o elemento, aplica somente a ele, só podendo haver 1 id com aquele nome 
+    Ex: #logo{...} */
+    b{
+        font-weight: normal;
+        color: red; /*cor simplificada: ff 00 00 */
+        font-style: italic;
+    }
+    .texto-verde{
+        color: green;
+    
+    }
+    .texto-amarelo{
+        color: yellow;
+    }
+    .fundo-vermelho{
+        background-color: red;
+    }
+    .fundo-azul{
+        background-color: blue;
+       
+    }
+    #quadrado {
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(35, 133, 16); /* Cor de fundo */
+}
+
+</style>
+<link rel="stylesheet" href="css/styles.css">
+<!-- este deve ser o primeiro css da página (aqui ta) -->
+<link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    
+    <h1>Aula sobre CSS</h1>
+    <!-- CSS Inline -> direto no elemento HTML -->
+     <P style="color:#09ff00  ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nostrum nam? Asperiores corporis quos voluptas perferendis? Quo culpa ipsam laudantium neque quaerat provident facilis, nisi dolorem laborum eligendi quae id!</P>
+<H1 style="text-align: center; font-weight: 900;color: rgb(0, 0, 0);">luis <mark><span style="color: rgb(0, 0, 0);">abdo</span></mark> </H1>
+
+<p>Texto que era pra ser negrito: <b>olá mundo</b></p>
+<b>também sou negrito!</b><br>
+<!-- para utilizar classes utilizamos a propriedade class -->
+<b class="texto-amarelo fundo-vermelho">
+    eu mudei utilizando classes!
+ </b><br><br>
+ <b class="texto-verde fundo-vermelho">
+    Também pode 
+ </b>
+<p>
+    no meio do texto <i class="texto-verde">Também pode</i>
+</p>
+<p class="texto-verde">
+    bem vindo ao mundo do CSS!
+    <br>
+    <b style="font-size: 25px;">onde alteramos tudo!</b>
+
+</p>
+<div id="quadrado">
+<!-- o id precisa ser o único da página -->
+</div>
+<!-- div#quadrado.texto-verde -->
+<div id="quadrado" class="texto-verde"></div>
+</div>
+
+</div>
+</body>
+</html>
