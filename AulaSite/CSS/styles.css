@@ -1,0 +1,134 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.navbar {
+    background-color: var(--navbar-bg);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .logo{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+.noticiastexto {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;          
+    font-size: 15px;
+    height: 200px;               
+}
+.subtitulo {
+    font-size: 24px; 
+    color: #333;     
+    margin-top: 20px; 
+    font-weight: bold; 
+}
+
+    
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;  
+    align-items: center;      
+    height: 98vh;            
+}
+
+.container img {
+    width: 852px;             
+    height: 480px;           
+    border-radius: 10px;   
+    object-fit: cover;        
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: flex-start;    /* Alinha os itens à esquerda */
+    align-items: center;            /* Centraliza verticalmente */
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;                    /* Garante que ocupe toda a largura da tela */
+    box-sizing: border-box;
+    flex-shrink: 0;                 /* Impede que o container encolha */
+    margin-bottom: 20px;            /* Espaçamento abaixo do container */
+}
+
+.container2 img {
+    width: 800px;
+    height: 480px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Estilos para o botão de dark mode */
+.dark-mode-toggle{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color:var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#quadradoseparador {
+    height: 20px;
+    width: 0px;
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
