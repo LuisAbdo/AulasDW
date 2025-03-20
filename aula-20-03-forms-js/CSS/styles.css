@@ -1,0 +1,51 @@
+.body{
+    margin: 20px;
+    max-width: 600px;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+/*  Define o espaçamento de todos os elementos dentro do formulário
+de forma Universal */
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+input[type="text"]{
+    /*faz o input crescer até o espaço disponível*/
+flex: 1;
+padding: 8px;
+}
+button{
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+li{
+    background-color: antiquewhite;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+.remover{
+    margin: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.remover:hover{
+    opacity: 0.8;
+}
