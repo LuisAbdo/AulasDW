@@ -1,26 +1,26 @@
-<!doctype html>
-<html lang="pt-BR">
-    <HEAD>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
         <meta charset="utf-8">
-        <title>Aula-20-03</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="sylesheet" href="css/reset.css">
-    </HEAD>
+        <title>Aula5-20-03</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
     <body>
-<h1>lista de tarefas</h1>
-<!-- utilizamos a tag form para delimitar os formulários
- action é para onde vão os dados do formulário # utilizamos para tratar no mesmo arquivo-->
-<form action="#" id="formtarefa">
-    <!-- input type é importante pois permite que o usuario crie uma checkbox, faça um campo
-      para email, data, local, senha etc. id: geralmente usado para comandos em
-      js, placeholder, normalmente é um texto dentro do input para ajuda, como 
-      a barra de busca em sites. Required deixa o texto obrigatorio-->
-<input type="text" id="inputTarefa" placeholder="Digite a Tarefa..." required>
-<button type="submit">Adicionar Tarefa</button>
-</form>        
-<ul id="listaTarefas"></ul>
-<script src="JS/script.js"></script>
-<a href="calculadora.html">Ir para a calculadora</a>
-<input type="text">
+        <h1>Lista de Tarefas</h1>
+        <!-- Utilizamos a tag FORM para delimitar os formularios
+        ACTION e pra onde vao os dados do formulario
+        # para tratar dados no mesmo arquivo -->
+        <form action="#" id="formTarefa">
+            <input type="text" id="inputTarefa"
+            placeholder="Digite a Tarefa..." required>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <ul id="listaTarefa"></ul>
+
+        
+
+        <script src="js/script.js"></script>
     </body>
 </html>
