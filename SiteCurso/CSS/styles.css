@@ -64,3 +64,15 @@ margin: 0 10px 10px 10px;
     font-weight: bold;
     margin: 0 10px;
 }
+.menu-nav ul{
+display: flex;
+flex-wrap: wrap;
+}
+.menu-nav a{
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+.menu-nav a:hover{
+    color:#c22626;
+}
