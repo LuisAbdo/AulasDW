@@ -76,3 +76,41 @@ flex-wrap: wrap;
 .menu-nav a:hover{
     color:#c22626;
 }
+.introducao{
+    font-size: 2em;
+    line-height: 1;
+    max-width: 960px;
+    margin:0 auto;
+    padding:60px 10px;
+
+}
+.sobre {
+    border-top: 2px solid #c22626;
+    border-bottom: 2px #c22626;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobreinfo{
+    flex: 2;
+    margin: 0 10px;
+
+}
+.sobreinfo h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+
+}
+.sobreinfo p{
+    font-size: 1.25;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+.sobre img{
+    flex: 1 1 160px;
+    margin: 0 10px;
+
+}
