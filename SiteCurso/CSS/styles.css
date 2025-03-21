@@ -114,3 +114,37 @@ flex-wrap: wrap;
     margin: 0 10px;
 
 }
+.noticias{
+    max-width: 960px;
+    margin: 60px auto;
+}
+.noticias h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+.noticias-container{
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+}
+.noticias-item{
+flex: 1 1 175px;
+margin: 10px;
+}
+.noticias-item h2{
+    font-size: 3em;
+    color: #c22626;
+ padding: 60px 20px;
+}
+.gray {
+    border-top: 8px solid #222222; 
+}
+
+.red {
+    border-top: 8px solid #c22626; 
+}
+
+.black {
+    border-top: 8px solid #000000;
+}
+
