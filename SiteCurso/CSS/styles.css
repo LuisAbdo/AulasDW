@@ -84,7 +84,14 @@ flex-wrap: wrap;
     padding:60px 10px;
 
 }
-
+.bordertop{
+    border-top: 2px solid #c22626 ;
+max-width: 960px;
+padding: 60px 0;
+}
+.sobre{
+    margin: 0 auto;
+}
 .sobreinfo{
     flex: 2;
     max-width: 600px;
@@ -106,9 +113,6 @@ flex-wrap: wrap;
 .sobre img{
     flex: 1 1 160px;
     margin: 0 10px;
-    max-width: 9000px;
-    display: flex;
-    justify-content: center;
 
 }
 .noticias{
