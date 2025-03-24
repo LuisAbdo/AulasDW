@@ -113,6 +113,7 @@ padding: 60px 0;
 .sobre img{
     flex: 1 1 160px;
     margin: 0 10px;
+    max-width: auto;
 
 }
 .noticias{
