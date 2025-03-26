@@ -293,6 +293,8 @@ footer{
 }
 .footer-col ul{
     list-style: none;
+    color: #f7f7f7;
+    cursor: pointer;
 
 }
 .footer-col ul li{
