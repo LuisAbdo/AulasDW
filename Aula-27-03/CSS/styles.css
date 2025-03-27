@@ -28,6 +28,7 @@ border: none;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
     border-right: #ccc;
+    border: none;
 }
 
 .resultado{
@@ -40,6 +41,7 @@ border: none;
     border-bottom: 1px solid ;
     border-left: 1px solid #ccc;
  border-right: 1px solid #ccc;
+ border: none;
 }
 .limpar, .maismenos, .porcentagem{
     background-color: #a0a1a0;
