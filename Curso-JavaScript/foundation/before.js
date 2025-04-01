@@ -13,4 +13,4 @@
 // code-runner:clear previous output
 // -> ctrl+alt+n (run code)
 // --ctrl + alt + m (stop the running code)
-console.log('test')
+console.log('test version 2!')
