@@ -16,3 +16,8 @@ function returnHi() {
 const greeting=returnHi()
 console.log(greeting)
 console.log(returnHi)
+
+function returnHiTo(name) {
+    return 'Hi ${name}'
+}
+console.log(returnHiTo('John'))
