@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        
+</head>
+
+<body>
+<!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Lista de Podutos</a></li>
+                            <li><a class="dropdown-item" href="#">Categorias</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Produtos em destaque</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tailwind.html"><strong><span style="color: red;">IR PARA TAILWIND.HTML</span></strong></a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Queima de estoque agora!</strong>Confira os preços!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <!-- Carrossel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAABsFBMVEX0vFT////7piDvQTdDQkT4v1X8wlbS09P09PT+qCDCw8WEYiMdKTfekx41MzRra2sNBQdpUTCbm5v1Qji5vMEAAAC6j0R4XTLY2dn4QzgnIyUrKSvIyMgkLDjlQjbNiR+/fx2JiYkAEirfq02wMy3MnUnFzc1TUlMaIjG6Ixnwt0yCLSnd4OOieSqCh48tOTuth0GRcTmugi19GRNgX19xTi/PMzGMCQCmqavSoD8ZDgymh0F8YDPkrUaPk5t3dnb9zABtX0xvVCX2tET5qy//sCD3sT1jRSJsAACbeDyKaziDcDnQpUu3KS5/ViCwsLCjJStQQCphSy2UDwC0IxdMPCldFSM0Nz783XWCYSSxj0NgLyeMHShtICbCm0hyZDV8GCdOHySXIxxdTEuwdyJ+VSB8AACQYCFqMjBdOyldOTguGxqibSGacTKvGg5eDQlWOx9ZTkFQAB9xKShZMxVpBiJuOitbFxSLIRsPKy1lUlIAFyZOGBVwaWFtTAAcAABCAAA6LBz/6Jf/8cT/3F7/++j934P95qn+8M9UTSw9NisQAx370zttXEQ1Q1lJS1J2AJ9sAAAXu0lEQVR4nO2di18Tx9rHM4aZXKimyYZNVjAQt5FbwATTuAgYy9WE0JAAWimg1lvrqVoPx1aPbc+p1t7et2//5Xdmd2ez90tI0PrZH7oJw85evnmemWcuOwkEfPny5cuXL1++fPny5cuXL1++fPny5cuXL1++fPny5ctXLwWJ3vZF/N2EEH+wu7tbh8hH516IX/98b6Nc3tjcjx94JjextLq8vHwCK3JC1PLy6tJETy70nRIM3LyV4WQFN3fqyH1ejIzSamvlwb2VyAkMr3fX/A4I1W9nOIbLbF/8Ymuc4xjmVtEduInVZT0xGdvI8OKKaH/Lq++t3aGDZ5jaF3eEdCiRT1YuBBlu46YLcKtGO5MUeTASiQwvKn99P9HB+j7HZO7EAAD5BN6cO7/NMRvrDuCWzC1N5nYXc7vXphpZfh8d9jbDjMdANg0kjYLkfY7bO7CrHJasTI366d2ReyvatNVju5/jEVovMxlsbOE8AGlib/g1usVxn1tzW7VjJoP7dMWQ+J6R2+e427Kp9V0KSW+mM8zGnAW4JUdqxDNN7fE98lZYLTPb2VKe0BKGGhURWzb7Jcd9ZVrCTSzbeqiT3psaAn3FcQ9FJ6X1AlYaJDLMHm+y++qRqJEa4tjvsDeCz7jgZdlNFW743RZX3jU46sTRoEl6L5wV1je58XMKLQH7qPT2ApcxhCLO9YEbRd56/QADvEEBb21Lwm27EQrL3CrpdHQQBySh9JdccF7HzSZi86a37KswN2bU2YIncDD3EfdRoiFzAw2sgSh5NXCz8NGIec3poLfqq+h0n4nOejqG1k+JKhLDSZ2fLpnjiZy8e/LvBg6d7Ts1oNNg3xjvzVNvccEEMIjUC+oAzgrb8Nrw2kgH4N5mIYe5Dervd1TPDTqIxCF3cGtBc5QwEHAcUm8fyCr8iKytRFbWOopN3h44zO20EzdYiKdsFC+g9QyzJYymNUeJCQ9xQ6vtppYVqRduUkGobHEkJ3XKS1vxZIhfaJ8UokCnfc/2vf1uuOFT2wpXybc45h/6w2THmXJVOY51/BEZWRxedOenkbtfR5Tt13fxdrlawJRQkSXb2gLexGsp2vMHYbWVSrWqHnpQ22BmpuzAueLmfJKbGWY8C9quil/T93GbVY5ooOikEhqTrdt6ITJ8D8OKjDwgfXPS9u6j+RxEhWoKb6s4DIAsi1BNaqVAvpkjn+tBswNsj5KhRRve3eEWCFzjmMdZkBiihwChJxyzuYty5EiIXRDN5IR6K5qPDM5dHBI5uRZZuTd8cm1lZfEk2a6dHL63stric/MINXm2hkhTuY4x5qTL35E+Nhhoera4BdzIHstZU/DKzcJl4cEex4yXSItebGcNle5zTJl0+O7gPAf3vsFl0cinZHtX2j7ABVrk669teZECTLPDDiG+9o24JQVi5BtylKVmnADbSYlwFpp8XcIEi7RSgqy3gBRjWQyDaOOpNW6P3GAuHk+RfynNSxyiOQyOeR47Fw4LIH35yzLG9jsSfQXxrZWT36wMr4nbeyvYUqTtiEn/mhrb2klsXc6WGJH7R+QigS9W5VtrKbeN4t4MDs5eJj4TtS7iumRv+EC714IMw21fvHrh/naQY7hNaXgB8q3WMnExYhrDa2srdDuytmiLDWvtnrvqQneJ9NpTHXNDOwAksPOULLusulW+iYA2GXkYkOHKt3dppZYT64Rh0TSkrUgj4shk5cFP7jrqTNqqZNLAPFICzBTyMokAzkRBeHEqD/L9Vry7x40MBcb3N8uZTHlj76u59nVKzQSrytRakU9HIjvuKlpDiwuyu7u7rV1FTfzf/Y1MlHBTcQGNAjC9YAGim9xIlJmbK67PHfDqWNPNjZtyO+m+uW+4rX+Wy+XDsqJr5fIm6/aeUL9oaXAmCcCahcF1lVuANsnUKV3rObKTwVNxIB6cxDWVJO6QYcpWYx0GLUxjBiR8agEgWMQi3eZm0FLkWKT31D0mGDzE/yUx+K1rbmgNgOQMlGtVi1jEkpuVvFGD6OQxSXtlPOFWDioib21HwVVxwqwAQEt6eyMMQlPqBqUzt5yFvGGrj31wTHqpdihY32SCOjF20y7gQfxjqj4cg/xLersWAyCm/OHjufYRLLkdFMzEpmzaHiaXM2bWK9obqftazbhxtjHcMzqTimMSIHyV/rIVAufGlT/ttW/eo58qTT932HLHyO2Mqr6EBxtGbh/bcOP3VHWIcIehv3EPGw855ZeNXWduFiQ8cjuDb+i8rOuDsk7RlPOnaJIxpb2TTbbrNEXPbdfIjfnWrnujtj95QdbzJ/cvXGj/orydvBVvn6G33GYxt8GPZD1pJKOiss/llOdZ8fdksvGE7jQalXe6Q1O+SyaltMoX7WxJomg72yDmNqPiNlc2cju081OEbuox6PUDUh2gt9yGz/Sdfy6bOVeix6/QlMd5OSW/RZMqdKcYTdmifXrpxzQpS3e6Q1Mmz/edGdFw02MLMs/sO3D7yXnSCfFsYfoidWELYvfYn2ruPeW2irm9oJc9nqTH/46TS5yrNOXctmwebW4VeSdmWxkpu0rzfUdTGuNyvswLzK092gCrGSO3W7bXCnFzFIRjefHTHZVeSvkY4VcJif2Knx4btwjmNklv9gk9fPoxhfRv5f7pbbZNKSvnC443aNK/KcrHykjGE3r0Scwt0r6rdRNuqrkqZjXeDGYTigLywYWzICsCA9Eh8SWcwIn9x8VtCXN7odzAND38ZeVOsoakYJubkqTMPJlmjEk0JfMCc1MaDWjdgC3IbCpja5AtVslPVfVSXUxacyNzN/KazrhecluODH9wSG1kS7GRhzSp7bnUKYPtYVhBMUHFdaPUK7mHNCm/RZMOMTellYpuGqqFILPRnv1pnNrB8znBntvQTK+50T1ORIZflg23Gr7IUJS0Wmh7YEZoc3OV846S8+VIROkWQTe5oF6Mydwo9UVPTNtza8z2mBvKSQXBEuZ2O5iRVMZRuCRhXE4KPqFJ4Eu6W0YIG3Y7DBt2G08Yd7uGuVFHRR8buTk17GHFnltiQXOTXeeGii1p/HIZc7s2Kev7LFUfTZo8paR9T5MOSzQpdugx6z7mRh3VlFtm3XYSAvrBntu0ps+8Q24I4n8I/xN/VC8YWxVVRXCkW3zDEIXhipI2W5TqFNynu2WUyhM3C+W0i8puJSWrUuaBi3S3DcyN1qjoW2P5FgxqGva8oen91J5bTBM2d8itWQg02dp8oZVr5uJV8aVVqKXYZqC1g9nN4zbPBBmH2TCWSEqAoeJ2ld5mO+hQKgHmvoK8pGSN0aR2mUe4UUc15cZpuRl6euL2ccgnem7O82oc7I2aHRLtLZ5DOdL1sHriLXCTQ1+0b8ZN27A3+CluMIRjaTnuHRXPlxbj3uxQFuOL67mduqSTzTwuN+VbvCqeYplw2/TKTalPkx1xkws4+MyEm23DXm4wpKXzhwXpnIIUPDWI1f2o52aio9Wn0jyWE4TbLaVJpcRq52lowgzQpPx/aDTxkVJwZb+gcch/QzRtgMZ0GSVr6L806x7hRgu4Wyb1AmfSsFcbXE65RDNpw95ecJPitwlx0PRsULx7JpilrfqhhBwKcxcFGuTGBNm4uDtZ2bjCFdm4mPEEzdoQ7stZLwjUn0sJOSvzUhyPlSu9Z2UT/dPATVPI1X9qpC2VfKq9b4XbqcFTWF3hJmpJtLcPbgdJXRc8BaSWMsDlR1KsPbnHCZCV7h6/lMTak3uSB31ST0QfCH8nJmVGwZBkhNEKEMR+E25LABVpBk8sBPoyJC34+QciN7mAmzOTYZIIzGlr1JmpGSvpb9vc3s4uBMzlntuqyO1M3+Dk9vZ9cb5NKRttxLLEtx5ubW99T5g1SkI0MUoQJK4+3r44SgrBSiUZzZLyOFy6v719lWRIjyaijRKxzuhtnPU26SFJlBo4Kyl/svgMzwdJu749IOhyTMly9MkxLyycvW7QmH72vBU3m+GtZZlb36BAW6bhIVpS5UO0mkgPKe/oRP5waEh5R7Pmh5R352iGEM1aSiZe9Gm5qS7R4fPtVKhuHH3JWVY8Wm7owHoMXOF2Wp4TRxpKQGky4XfKLxrZlc0WKuWTpyk3/cg9rHdvKFh3ZDcGLYnnCTee9mOheIHdsTrsCT23dEgnEEoIeiVC9ojMuaUtuUF+7LTmDiA0e2Ksx1poImyLFBWsVxHKWc3Ic8EtnzSokbZH5MgtoruMJss2VVe4E2BT5s7Uy6U7YK7I1lPU8CFftOY2EXHmFs7r1ImT6rlpZ6w1A2yObymXCAM7VkV3tdYrhw6Q4bL5+UJ7Nl6qymqnHGMPl53cDbd8dGhoSP4vvnRibDpu2ilddR6xByinuCZk51vmN9bKBVrW4OBRmaI/WurBsJy2XoCFAsrVlLDXgVsYvHoN3vwMwOtXAHz2Bvz2S2fYbLjhT5E9UBXXPHbSlpnBYdeBfM0KDoo3jwpOG9jpaxBULKZop6U5N7yNRmVub65cAZ9d+QVcufLm1ys/45fXXecWINzUFyg/HGJQHBc5VQs2qFVH3sHpeg1sa17In2ZtuQ0l8EsjTe3tV/Dbr7+BV6/AG2x6v77qvr3puWn/pnpbiNdaVthSOC5Dp83/aK0pO81o/TQXR0WporDglsbg0gLl1iWVkoJnbtgAxAdtaS0KA7xl0Mo3A+IzJV6E4ml9rafWOW31hI0ZSYWwpZ9Gh0JDtHwzDXxVyWY7mHFreOWG+Gprf29z89ZhfNfCcdXH4FtVr88qoYrJhar0icXxrOwNC4TTchxi3vXQTg7nDX80s1Kv3BB/81aZ44KZIMNxG9eqjpEb5AsesXXMzbw+HcJNArFFEM67sTeXjS+P3NDcfpDb2G+tF9dvfrWX4cpfOZf5hh3MRmDVQjHzm6Pyxi1ELSZP/NTR3tpJXeSGbm5yG1/tir36CPHr1zLctQOv5gQLRTvVWHT7oq2+sTqjdfxGejHCIreutOq13HTtBSM3tL7B7c8hSGe+o8DvG9yzuh6uVbyiHNdB6JCzlfkkRmTbPiWrJ4UJN2M90xE4jb3p70/HDe5ucrfrZACJ9FmyPLG6dZyky9XC0ceROgDQ9+O2MlvIB9Zx8GvDTexWC3cxDvHALXCN26/jGDc+9sGZ69fPjA0WFxA2weDv2vtYaM27fkzEnFvpnK1MyzeYa0JD/5umnZUGpjVjz7mh9czGHG5rjV2nXdvXX1YR+l2zEADZb/6no/V4dlafQr4pPcym5uatsO+Qm76/V29v+1wT5drUxAnVTcjf0s42hyk2YNmzqOyUs15zgHXmhuZN8tVOP9Bz653U3Fb1D3pquMG58sYBrx9Sub6DbnK3NExc9W/aLDsAXdibWb5qdUnvp8fDbak2r9WOmhtKcYeBl4ZhqOvx+saG7dqIntWRn8JUAQWc+pGGutdPruJmvzYc+parxa8buPWNsZPB9bfODdZzKODILQRCBmyC0FE/uYqb/d3AyczvZ8wGPv/4lrMcw3OQqbcSP1UHV+1Iy4ab1C237Nxv2ZWoV8PNfpUuGPifw3+YYes7dXj4e2fcIGuyKE2c1AsJqgbQvLfmJmrJ0d7SyWSjQf5JL41GJ06q5eaw8M9OhnuhIzYozVGY5DadVs21AtdpvWCliKO9vX4DwCsA3rwWX0AX7M22eCOrw5TP67CVwCVCblDz1NrRdQRujn7625Ur4Ocrn5F+8ldX/hd03JNZijYoN/ub2eeYj7RLj32YJfMpyLtgMGgxQtgZt5j9NdtwW3W0t59/Aa9/fg0++xm8+exXkO9wOEvVT27rpuThSmbL4rMRMkHOfn6cN8GpaTvFbFpxExEnbl2Sws3wtLhW/B6jmr+o4xYMWiya2+GINJywk+1z44721m1uDm6KPueYbVz35Eezo8rJo6UKcaksFzSuYSrlqqY89/YeTatO4876FJmn8i5vyKNMVTLl5lCbwrlNjjxYQubu0rmIYQwtnSVPnnDXTFtWqMaigtUIYY903PbmtJA0Wt8jM4NJDEXnEedD0i/3g9fMG1pkiSCvywQdVcsO80Oc7M0lYsrNwU0DZOJZ6j+mxxL+tW6xMg1qIRToFjfksIqhrCWP7YVO+8llbi7WV4VoYdrsEE1kRQbyzfmm1fRTr2rNN90EidDB3rwOwDhwc1UIoX6TcGd61jqvOAbhVTyiA8nqI9V4hNws4SeuS3Bs5ZvLjm20EyYPxFCRR2GSU10uv2C1iuLGAUhSVKbcZH93uKmCsIk/wmSmtXj6UAW3h5KWq5V1LFT9yTjZF7I1VHdTVL473FAxrpql1YqSFQhilViFPBcz3W1rI+ebnzeZGYHYVNGNU2i49U6ldEPFjSzZS+dOyT/iOrW5dgcbmirRiwoLzVlrbNCwLpI7QRz0FU1m4rhsekjcovYj/kcWbtcLbW6w0IK1arVYqBVqbAr/xHMtPr6jDcIgnFmsXE5cnv7hxqz1reC9bnwSi31yY8b7Nx5C++EwaPtxSOvVXPqwxxq8RBanV+wNGgbTySCyLgjDFz6xsDChvnjDJMiZkvzEVrQ001VXxh/Ij3/+uTi1YHFUidsxyb5eiMfNJ/aqLpavaZ+zXFM955Zc62bf3FQpSg6an+43N+R3iBsp5WwF+ZZmij7c0dRb4Z2ugUNrUXrUfJ+mlbJAxY6dcqe+jv6k0diMctoObgZjg0gFDi3qOpzCdqtue5H2yH3qv1y/TJVwp9igIFj8SegruTyIctL/6+BuSA0YQD8pv84IQCdhpisWJ642ij+GZCOv/zic+tZNFI0JQ6ZqxBrOuXW63MkXbKF5Fu0oEwjRU3Kg0sBp0l03IHmszarbXs4jPoF++f74+JbYlzXd9o4OuJGHBU1l0T3bfW5kKo2CDZI1LkFlIF8aAGBU/uQEm0asa0lHFh5zTJAJEoT5R8pR0alYB6qYqpMDfeDuFvRzQFQhl/isPRiIgcZAPvSh/HHkbb+QwS038cjSymLMY9L51w6PIN+XHIq+JQ0l/5pVx2SWj1ss7ATYeatHFhYJqEslzC2MXVWuWbtRM5AlWtsrkhHb+0EVjgdu/HW5YXza7xh0+a/FiTYMNKuX+iJ3alYgUIpwSgwkTpeio/mBgUticfFnp9xUwbW4PF9e5iauBqUZEUQT7KP+t6BH7IT6Mp4a5p88bXNja5ahsMQNCKNZMBAeKIHTYmHeaa8vSrXb+HCG+Ka0bJ20RpnOiqHDl9L0RhpPlJZe1FU//XQP8Rk3Kz+9QXMmKuGBBqiIZdyNzrihVK7a/q5rsuwXaJAlJznyjbEg2p3wppuSSimd2h8vtH74XrIKgnkgHB5IgNIp/D7U2R2i+RyZD6hEOOJFCVe3x8XVGkDsncMmXmJWUztn3RbuE/IoBMlRGsgOkFBkurNRBhSv45ZIURviAHDunGjS1t/w8PbkYG/2WaVlTMRZHkKFNCg7bmihVr2gqoHIKvttxcxiTa+lU5fzH4FbYMEwLybW8aAWahXVHQazqiacubm14t6k7wBLecve0o0gEW7awLnimhvSN1CFI3TBaXsoyfcUUI2aNm3+xvYWQI804IQuDkIsKO3Q5LtXmQaOyI109yqN43BXO3zJ97BI8v59aMch0U+18tJYghP9sWQ+HM4nY/0TXbUL1Cdhs/zWH6cr8yivl+fe3syPjeDsVH//1KxTX7FXiV/AggPCflUs6eHmIOtRXi9vyjjR+pxppwbKWTz1QVo93geznB7qDaAfiaf+QbFBdh4VXI2syrv3lhtuLsVi5AIT7W4p07YSmq8WOvjOSivxNduHesnAKuzTTEpBrKcvG+2xn5IKeYZwa9nU2dKN2qwe0oGc7wPOTodUNTRi48V3qopATeCiw1FcraZHcyotyKFHqrqUTBxh3ftp74UekRZSn9MVoXgh5/jYZEeCOdOveI7ruxSs6gVcFvILZEN+eF7z4ub8PA95fABj7sCCTX746K9wXmg6DzcgtuDmKjqQ5fd3ulORhbVcoZor8sVctXCAX+pFli3Wa7yrOcewUEVS7noVZ+PxDyv+Xsvlanb5clNTNtNmVDu+Q06iljJpQ+/vLq/YZNKHq9qio9rEly9fvnz58uXLly9fvnz58uXLly9fb0n/DxCg6LIMbmCzAAAAAElFTkSuQmCC" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Seja Bem vindo(a)!</h5>
+              <p>Estamos sempre ao seu dispor.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://climba.com.br/blog/wp-content/uploads/2016/07/Loja-Virtual-x-Loja-F%C3%ADsica-Quais-s%C3%A3o-as-vantagens-e-desvantagens-9-e1470704721792.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+            <!-- Cards -->
+      <div class="container-fluid mt-5">
+        <div class="row d-flex align-items-stretch">
+            <div class="col-1 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEXu7u7w8PCurq6wsLDr6+uzs7OsrKzz8/Pl5eW1tbXJycno6Oje3t7Q0NDh4eG5ubm/v7/Y2NilpaW9vb3Nzc2enp76+vqZmZm9zzSYAAAEqklEQVR4nO3ai27jNhAFUA5JcfiS+JC8+/9/2iEVO9lgU2yBFqmte5A4siwE5jVfo0QpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz8jS3Xe/lW9kjzrlC4dQzKTdZUPgQ5tl0MbYq4UwZgAmzm7ROaVkpTtU5nFOkiB1hTjIt0OswejII5CkjYty4jiyBGC/+/3994iadlprIyMgjM9dPvjVLOO5RFEvskYUabE0V5rs72vjLs9GLIvMjhcIgexiQp42VjnGunqy5/No9HqBCCSDYJbz0+dm5uev6xwRild9lQyWewbRzWlAhsYy10aZF66SwegH46BJBDUnf8guKcyXLtIPZO2TfjCO5Kc+ePQHOXJtHFwsA5kMnK48W8xZm8KX6wcyBcoi0GaDpX6U0WAvl4EaGTxKJZZhMXZLF8uASCqmdWyVxzlZHs75wLXrZCD9f3OyV5anc18gRdOZwcqvXy885oOxZ9b7qBV5NWNYyMHhir1A2fg+J0pHkGkgrmtxUjYy2UQ2Wnr9bvBhf6BIlkRJwZlRLiqpmzwxJ1NePoeZQZi3URSl6kYZHRqPCIzJ7KV6LOrF77K+ZfB2zGpr2c/VwRa96FWCCP6lA1D3DPxDSudPy7aYRWaIkl49gpFBMLNg/oUz0nTpCSbY17+nKEO9jVtIn+go5+dRu8LfXGRRPOJnK3M7g9GNZ094aXTeXP9MItDVVpkYD/X6HeG3aHXjlhpLJXWFsun3qNVZPcQLR3BujOiq4+BuNn9slF8khn/QjLkb+Ju1gL44/l/70wX+w3X05bZoDpL3P0s/zbrp2+czv0vFro/6kHKj9kWdQH59VJKkjueoKYmOTnNyOwf4+UAfHs5T/pbf9oRjSeQez2LyvntQbzOkPRfLty30bXuObiAZsFebp+ylG4/Pl3K2UipnKQq8zXIwY8hkk5VD9ptkIC/68a22EY3Pdl4rXaCRtNvKt1SY9CQZjH7A0ZW+h968kweuS+lr1tVk34vegy7j7sEtNXlmWB57YNc2VwKFIJdy7MFtqQfTbb6pnjkWZXYTnyuD8mMPP/ZKiWOg7m23Ovq42O5999L8kYFtndNPkjbXRTI4nPSbEPnQvm9yyvaNettuXHd2+XAp354lA3VmwHGXL1WLkUMTouq71EYzg6RuyZ79gO1Pe5OPeeHe7N4LLQfn3nri1cm1pCUD8j13rkZqq2fJgN4zqDUuFAOX2jyHSCmlniQDaT6psx9Y6QeRy8zAbjcrV9WQeqO9vGXQFS3uoLWTTAq37bub92ek/uFYz6/sSt2pFBnkXirjNTkvX1a6gpI4smN7U60vtbDOqwmVxy21PArpJcmFtEgGUlR2yWyXqkpG1VP0A1n5ZRG347+rrPT4RFaGtw8Hyzw/tjtjxzPvFtnxpxY1Zga5ZjxLnniRHcDYFfnz37PkV8k14zqiNK9+Dve93Hjf5w5vLeVQjzX+fat3X/hnG8/D2Pj+4mO7oNTjgifpBR+9vWmmrzfD6uPulx4b6KdsLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwL/kL9BXKqpmzKtTAAAAAElFTkSuQmCC"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaso Decorativo de Cerâmica Fosca</h5>
+                        <p class="card-text">Vaso em cerâmica de acabamento fosco, ideal para compor ambientes sofisticados e minimalistas. Pode ser utilizado com flores secas, plantas artificiais ou como peça decorativa isolada. Disponível nas cores branco, cinza e terracota.</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEXu7u7w8PCurq6wsLDr6+uzs7OsrKzz8/Pl5eW1tbXJycno6Oje3t7Q0NDh4eG5ubm/v7/Y2NilpaW9vb3Nzc2enp76+vqZmZm9zzSYAAAEqklEQVR4nO3ai27jNhAFUA5JcfiS+JC8+/9/2iEVO9lgU2yBFqmte5A4siwE5jVfo0QpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz8jS3Xe/lW9kjzrlC4dQzKTdZUPgQ5tl0MbYq4UwZgAmzm7ROaVkpTtU5nFOkiB1hTjIt0OswejII5CkjYty4jiyBGC/+/3994iadlprIyMgjM9dPvjVLOO5RFEvskYUabE0V5rs72vjLs9GLIvMjhcIgexiQp42VjnGunqy5/No9HqBCCSDYJbz0+dm5uev6xwRild9lQyWewbRzWlAhsYy10aZF66SwegH46BJBDUnf8guKcyXLtIPZO2TfjCO5Kc+ePQHOXJtHFwsA5kMnK48W8xZm8KX6wcyBcoi0GaDpX6U0WAvl4EaGTxKJZZhMXZLF8uASCqmdWyVxzlZHs75wLXrZCD9f3OyV5anc18gRdOZwcqvXy885oOxZ9b7qBV5NWNYyMHhir1A2fg+J0pHkGkgrmtxUjYy2UQ2Wnr9bvBhf6BIlkRJwZlRLiqpmzwxJ1NePoeZQZi3URSl6kYZHRqPCIzJ7KV6LOrF77K+ZfB2zGpr2c/VwRa96FWCCP6lA1D3DPxDSudPy7aYRWaIkl49gpFBMLNg/oUz0nTpCSbY17+nKEO9jVtIn+go5+dRu8LfXGRRPOJnK3M7g9GNZ094aXTeXP9MItDVVpkYD/X6HeG3aHXjlhpLJXWFsun3qNVZPcQLR3BujOiq4+BuNn9slF8khn/QjLkb+Ju1gL44/l/70wX+w3X05bZoDpL3P0s/zbrp2+czv0vFro/6kHKj9kWdQH59VJKkjueoKYmOTnNyOwf4+UAfHs5T/pbf9oRjSeQez2LyvntQbzOkPRfLty30bXuObiAZsFebp+ylG4/Pl3K2UipnKQq8zXIwY8hkk5VD9ptkIC/68a22EY3Pdl4rXaCRtNvKt1SY9CQZjH7A0ZW+h968kweuS+lr1tVk34vegy7j7sEtNXlmWB57YNc2VwKFIJdy7MFtqQfTbb6pnjkWZXYTnyuD8mMPP/ZKiWOg7m23Ovq42O5999L8kYFtndNPkjbXRTI4nPSbEPnQvm9yyvaNettuXHd2+XAp354lA3VmwHGXL1WLkUMTouq71EYzg6RuyZ79gO1Pe5OPeeHe7N4LLQfn3nri1cm1pCUD8j13rkZqq2fJgN4zqDUuFAOX2jyHSCmlniQDaT6psx9Y6QeRy8zAbjcrV9WQeqO9vGXQFS3uoLWTTAq37bub92ek/uFYz6/sSt2pFBnkXirjNTkvX1a6gpI4smN7U60vtbDOqwmVxy21PArpJcmFtEgGUlR2yWyXqkpG1VP0A1n5ZRG347+rrPT4RFaGtw8Hyzw/tjtjxzPvFtnxpxY1Zga5ZjxLnniRHcDYFfnz37PkV8k14zqiNK9+Dve93Hjf5w5vLeVQjzX+fat3X/hnG8/D2Pj+4mO7oNTjgifpBR+9vWmmrzfD6uPulx4b6KdsLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwL/h"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Relógio de Parede Minimalista </h5>
+                        <p class="card-text">Relógio analógico com movimento contínuo (sem tique-taque), ideal para ambientes que exigem silêncio, como escritórios e quartos. Estrutura em plástico ABS, visor em acrílico e ponteiros metálicos. Funciona com 1 pilha AA (não inclusa).</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEXu7u7w8PCurq6wsLDr6+uzs7OsrKzz8/Pl5eW1tbXJycno6Oje3t7Q0NDh4eG5ubm/v7/Y2NilpaW9vb3Nzc2enp76+vqZmZm9zzSYAAAEqklEQVR4nO3ai27jNhAFUA5JcfiS+JC8+/9/2iEVO9lgU2yBFqmte5A4siwE5jVfo0QpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz8jS3Xe/lW9kjzrlC4dQzKTdZUPgQ5tl0MbYq4UwZgAmzm7ROaVkpTtU5nFOkiB1hTjIt0OswejII5CkjYty4jiyBGC/+/3994iadlprIyMgjM9dPvjVLOO5RFEvskYUabE0V5rs72vjLs9GLIvMjhcIgexiQp42VjnGunqy5/No9HqBCCSDYJbz0+dm5uev6xwRild9lQyWewbRzWlAhsYy10aZF66SwegH46BJBDUnf8guKcyXLtIPZO2TfjCO5Kc+ePQHOXJtHFwsA5kMnK48W8xZm8KX6wcyBcoi0GaDpX6U0WAvl4EaGTxKJZZhMXZLF8uASCqmdWyVxzlZHs75wLXrZCD9f3OyV5anc18gRdOZwcqvXy885oOxZ9b7qBV5NWNYyMHhir1A2fg+J0pHkGkgrmtxUjYy2UQ2Wnr9bvBhf6BIlkRJwZlRLiqpmzwxJ1NePoeZQZi3URSl6kYZHRqPCIzJ7KV6LOrF77K+ZfB2zGpr2c/VwRa96FWCCP6lA1D3DPxDSudPy7aYRWaIkl49gpFBMLNg/oUz0nTpCSbY17+nKEO9jVtIn+go5+dRu8LfXGRRPOJnK3M7g9GNZ094aXTeXP9MItDVVpkYD/X6HeG3aHXjlhpLJXWFsun3qNVZPcQLR3BujOiq4+BuNn9slF8khn/QjLkb+Ju1gL44/l/70wX+w3X05bZoDpL3P0s/zbrp2+czv0vFro/6kHKj9kWdQH59VJKkjueoKYmOTnNyOwf4+UAfHs5T/pbf9oRjSeQez2LyvntQbzOkPRfLty30bXuObiAZsFebp+ylG4/Pl3K2UipnKQq8zXIwY8hkk5VD9ptkIC/68a22EY3Pdl4rXaCRtNvKt1SY9CQZjH7A0ZW+h968kweuS+lr1tVk34vegy7j7sEtNXlmWB57YNc2VwKFIJdy7MFtqQfTbb6pnjkWZXYTnyuD8mMPP/ZKiWOg7m23Ovq42O5999L8kYFtndNPkjbXRTI4nPSbEPnQvm9yyvaNettuXHd2+XAp354lA3VmwHGXL1WLkUMTouq71EYzg6RuyZ79gO1Pe5OPeeHe7N4LLQfn3nri1cm1pCUD8j13rkZqq2fJgN4zqDUuFAOX2jyHSCmlniQDaT6psx9Y6QeRy8zAbjcrV9WQeqO9vGXQFS3uoLWTTAq37bub92ek/uFYz6/sSt2pFBnkXirjNTkvX1a6gpI4smN7U60vtbDOqwmVxy21PArpJcmFtEgGUlR2yWyXqkpG1VP0A1n5ZRG347+rrPT4RFaGtw8Hyzw/tjtjxzPvFtnxpxY1Zga5ZjxLnniRHcDYFfnz37PkV8k14zqiNK9+Dve93Hjf5w5vLeVQjzX+fat3X/hnG8/D2Pj+4mO7oNTjgifpBR+9vWmmrzfD6uPulx4b6KdsLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwL/kL9BXKqpmzKtTAAAAAElFTkSuQmCC"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Luminária de Mesa com Base em Madeira Natural</h5>
+                        <p class="card-text">Luminária de design contemporâneo, com cúpula de vidro fosco e base em madeira reflorestada. Iluminação suave, ideal para mesas de leitura ou ambientes de descanso. Acompanha lâmpada LED de baixo consumo.</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEXu7u7w8PCurq6wsLDr6+uzs7OsrKzz8/Pl5eW1tbXJycno6Oje3t7Q0NDh4eG5ubm/v7/Y2NilpaW9vb3Nzc2enp76+vqZmZm9zzSYAAAEqklEQVR4nO3ai27jNhAFUA5JcfiS+JC8+/9/2iEVO9lgU2yBFqmte5A4siwE5jVfo0QpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz8jS3Xe/lW9kjzrlC4dQzKTdZUPgQ5tl0MbYq4UwZgAmzm7ROaVkpTtU5nFOkiB1hTjIt0OswejII5CkjYty4jiyBGC/+/3994iadlprIyMgjM9dPvjVLOO5RFEvskYUabE0V5rs72vjLs9GLIvMjhcIgexiQp42VjnGunqy5/No9HqBCCSDYJbz0+dm5uev6xwRild9lQyWewbRzWlAhsYy10aZF66SwegH46BJBDUnf8guKcyXLtIPZO2TfjCO5Kc+ePQHOXJtHFwsA5kMnK48W8xZm8KX6wcyBcoi0GaDpX6U0WAvl4EaGTxKJZZhMXZLF8uASCqmdWyVxzlZHs75wLXrZCD9f3OyV5anc18gRdOZwcqvXy885oOxZ9b7qBV5NWNYyMHhir1A2fg+J0pHkGkgrmtxUjYy2UQ2Wnr9bvBhf6BIlkRJwZlRLiqpmzwxJ1NePoeZQZi3URSl6kYZHRqPCIzJ7KV6LOrF77K+ZfB2zGpr2c/VwRa96FWCCP6lA1D3DPxDSudPy7aYRWaIkl49gpFBMLNg/oUz0nTpCSbY17+nKEO9jVtIn+go5+dRu8LfXGRRPOJnK3M7g9GNZ094aXTeXP9MItDVVpkYD/X6HeG3aHXjlhpLJXWFsun3qNVZPcQLR3BujOiq4+BuNn9slF8khn/QjLkb+Ju1gL44/l/70wX+w3X05bZoDpL3P0s/zbrp2+czv0vFro/6kHKj9kWdQH59VJKkjueoKYmOTnNyOwf4+UAfHs5T/pbf9oRjSeQez2LyvntQbzOkPRfLty30bXuObiAZsFebp+ylG4/Pl3K2UipnKQq8zXIwY8hkk5VD9ptkIC/68a22EY3Pdl4rXaCRtNvKt1SY9CQZjH7A0ZW+h968kweuS+lr1tVk34vegy7j7sEtNXlmWB57YNc2VwKFIJdy7MFtqQfTbb6pnjkWZXYTnyuD8mMPP/ZKiWOg7m23Ovq42O5999L8kYFtndNPkjbXRTI4nPSbEPnQvm9yyvaNettuXHd2+XAp354lA3VmwHGXL1WLkUMTouq71EYzg6RuyZ79gO1Pe5OPeeHe7N4LLQfn3nri1cm1pCUD8j13rkZqq2fJgN4zqDUuFAOX2jyHSCmlniQDaT6psx9Y6QeRy8zAbjcrV9WQeqO9vGXQFS3uoLWTTAq37bub92ek/uFYz6/sSt2pFBnkXirjNTkvX1a6gpI4smN7U60vtbDOqwmVxy21PArpJcmFtEgGUlR2yWyXqkpG1VP0A1n5ZRG347+rrPT4RFaGtw8Hyzw/tjtjxzPvFtnxpxY1Zga5ZjxLnniRHcDYFfnz37PkV8k14zqiNK9+Dve93Hjf5w5vLeVQjzX+fat3X/hnG8/D2Pj+4mO7oNTjgifpBR+9vWmmrzfD6uPulx4b6KdsLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwL/kL9BXKqpmzKtTAAAAAElFTkSuQmCC"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Jogo de Organizadores em Linho Sintético</h5>
+                        <p class="card-text">Conjunto com três caixas organizadoras dobráveis, revestidas em linho sintético e estruturadas com papelão rígido. Tamanhos variados para otimizar a organização de closets, escritórios ou prateleiras. Fácil de limpar e armazenar.</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEXu7u7w8PCurq6wsLDr6+uzs7OsrKzz8/Pl5eW1tbXJycno6Oje3t7Q0NDh4eG5ubm/v7/Y2NilpaW9vb3Nzc2enp76+vqZmZm9zzSYAAAEqklEQVR4nO3ai27jNhAFUA5JcfiS+JC8+/9/2iEVO9lgU2yBFqmte5A4siwE5jVfo0QpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz8jS3Xe/lW9kjzrlC4dQzKTdZUPgQ5tl0MbYq4UwZgAmzm7ROaVkpTtU5nFOkiB1hTjIt0OswejII5CkjYty4jiyBGC/+/3994iadlprIyMgjM9dPvjVLOO5RFEvskYUabE0V5rs72vjLs9GLIvMjhcIgexiQp42VjnGunqy5/No9HqBCCSDYJbz0+dm5uev6xwRild9lQyWewbRzWlAhsYy10aZF66SwegH46BJBDUnf8guKcyXLtIPZO2TfjCO5Kc+ePQHOXJtHFwsA5kMnK48W8xZm8KX6wcyBcoi0GaDpX6U0WAvl4EaGTxKJZZhMXZLF8uASCqmdWyVxzlZHs75wLXrZCD9f3OyV5anc18gRdOZwcqvXy885oOxZ9b7qBV5NWNYyMHhir1A2fg+J0pHkGkgrmtxUjYy2UQ2Wnr9bvBhf6BIlkRJwZlRLiqpmzwxJ1NePoeZQZi3URSl6kYZHRqPCIzJ7KV6LOrF77K+ZfB2zGpr2c/VwRa96FWCCP6lA1D3DPxDSudPy7aYRWaIkl49gpFBMLNg/oUz0nTpCSbY17+nKEO9jVtIn+go5+dRu8LfXGRRPOJnK3M7g9GNZ094aXTeXP9MItDVVpkYD/X6HeG3aHXjlhpLJXWFsun3qNVZPcQLR3BujOiq4+BuNn9slF8khn/QjLkb+Ju1gL44/l/70wX+w3X05bZoDpL3P0s/zbrp2+czv0vFro/6kHKj9kWdQH59VJKkjueoKYmOTnNyOwf4+UAfHs5T/pbf9oRjSeQez2LyvntQbzOkPRfLty30bXuObiAZsFebp+ylG4/Pl3K2UipnKQq8zXIwY8hkk5VD9ptkIC/68a22EY3Pdl4rXaCRtNvKt1SY9CQZjH7A0ZW+h968kweuS+lr1tVk34vegy7j7sEtNXlmWB57YNc2VwKFIJdy7MFtqQfTbb6pnjkWZXYTnyuD8mMPP/ZKiWOg7m23Ovq42O5999L8kYFtndNPkjbXRTI4nPSbEPnQvm9yyvaNettuXHd2+XAp354lA3VmwHGXL1WLkUMTouq71EYzg6RuyZ79gO1Pe5OPeeHe7N4LLQfn3nri1cm1pCUD8j13rkZqq2fJgN4zqDUuFAOX2jyHSCmlniQDaT6psx9Y6QeRy8zAbjcrV9WQeqO9vGXQFS3uoLWTTAq37bub92ek/uFYz6/sSt2pFBnkXirjNTkvX1a6gpI4smN7U60vtbDOqwmVxy21PArpJcmFtEgGUlR2yWyXqkpG1VP0A1n5ZRG347+rrPT4RFaGtw8Hyzw/tjtjxzPvFtnxpxY1Zga5ZjxLnniRHcDYFfnz37PkV8k14zqiNK9+Dve93Hjf5w5vLeVQjzX+fat3X/hnG8/D2Pj+4mO7oNTjgifpBR+9vWmmrzfD6uPulx4b6KdsLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwL/kL9BXKqpmzKtTAAAAAElFTkSuQmCC"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Quadro Decorativo com Moldura Preta – “Geometria Moderna”</h5>
+                        <p class="card-text">Impressão artística em papel fotográfico fosco de alta gramatura, com moldura em MDF preto e vidro protetor. A arte apresenta formas geométricas em tons neutros, ideal para ambientes corporativos ou residenciais.</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAASFBMVEXu7u7w8PCurq6wsLDr6+uzs7OsrKzz8/Pl5eW1tbXJycno6Oje3t7Q0NDh4eG5ubm/v7/Y2NilpaW9vb3Nzc2enp76+vqZmZm9zzSYAAAEqklEQVR4nO3ai27jNhAFUA5JcfiS+JC8+/9/2iEVO9lgU2yBFqmte5A4siwE5jVfo0QpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz8jS3Xe/lW9kjzrlC4dQzKTdZUPgQ5tl0MbYq4UwZgAmzm7ROaVkpTtU5nFOkiB1hTjIt0OswejII5CkjYty4jiyBGC/+/3994iadlprIyMgjM9dPvjVLOO5RFEvskYUabE0V5rs72vjLs9GLIvMjhcIgexiQp42VjnGunqy5/No9HqBCCSDYJbz0+dm5uev6xwRild9lQyWewbRzWlAhsYy10aZF66SwegH46BJBDUnf8guKcyXLtIPZO2TfjCO5Kc+ePQHOXJtHFwsA5kMnK48W8xZm8KX6wcyBcoi0GaDpX6U0WAvl4EaGTxKJZZhMXZLF8uASCqmdWyVxzlZHs75wLXrZCD9f3OyV5anc18gRdOZwcqvXy885oOxZ9b7qBV5NWNYyMHhir1A2fg+J0pHkGkgrmtxUjYy2UQ2Wnr9bvBhf6BIlkRJwZlRLiqpmzwxJ1NePoeZQZi3URSl6kYZHRqPCIzJ7KV6LOrF77K+ZfB2zGpr2c/VwRa96FWCCP6lA1D3DPxDSudPy7aYRWaIkl49gpFBMLNg/oUz0nTpCSbY17+nKEO9jVtIn+go5+dRu8LfXGRRPOJnK3M7g9GNZ094aXTeXP9MItDVVpkYD/X6HeG3aHXjlhpLJXWFsun3qNVZPcQLR3BujOiq4+BuNn9slF8khn/QjLkb+Ju1gL44/l/70wX+w3X05bZoDpL3P0s/zbrp2+czv0vFro/6kHKj9kWdQH59VJKkjueoKYmOTnNyOwf4+UAfHs5T/pbf9oRjSeQez2LyvntQbzOkPRfLty30bXuObiAZsFebp+ylG4/Pl3K2UipnKQq8zXIwY8hkk5VD9ptkIC/68a22EY3Pdl4rXaCRtNvKt1SY9CQZjH7A0ZW+h968kweuS+lr1tVk34vegy7j7sEtNXlmWB57YNc2VwKFIJdy7MFtqQfTbb6pnjkWZXYTnyuD8mMPP/ZKiWOg7m23Ovq42O5999L8kYFtndNPkjbXRTI4nPSbEPnQvm9yyvaNettuXHd2+XAp354lA3VmwHGXL1WLkUMTouq71EYzg6RuyZ79gO1Pe5OPeeHe7N4LLQfn3nri1cm1pCUD8j13rkZqq2fJgN4zqDUuFAOX2jyHSCmlniQDaT6psx9Y6QeRy8zAbjcrV9WQeqO9vGXQFS3uoLWTTAq37bub92ek/uFYz6/sSt2pFBnkXirjNTkvX1a6gpI4smN7U60vtbDOqwmVxy21PArpJcmFtEgGUlR2yWyXqkpG1VP0A1n5ZRG347+rrPT4RFaGtw8Hyzw/tjtjxzPvFtnxpxY1Zga5ZjxLnniRHcDYFfnz37PkV8k14zqiNK9+Dve93Hjf5w5vLeVQjzX+fat3X/hnG8/D2Pj+4mO7oNTjgifpBR+9vWmmrzfD6uPulx4b6KdsLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwL/kL9BXKqpmzKtTAAAAAElFTkSuQmCC"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Conjunto de Copos de Vidro Temperado – 6 Unidades </h5>
+                        <p class="card-text">Copos em vidro temperado, resistentes a choques térmicos e ideais para uso diário. Design clean e ergonômico, compatível com bebidas quentes ou frias. Acompanha embalagem reforçada para transporte seguro.</p>
+                        <a href="#" class="btn btn-primary">comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Mais produtos
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mais Produtos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Estamos sem estoque no momento.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Concluído</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Accordion -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ❓ Quem somos
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>A Essência & Forma</strong> é uma loja virtual especializada em decoração e utilidades para o lar. Trabalhamos com produtos selecionados, de design contemporâneo, focados em funcionalidade, durabilidade e estética. Nosso objetivo é ajudar você a criar ambientes que inspirem conforto e bem-estar todos os dias.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                🚚 Como funciona a entrega?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Trabalhamos com transportadoras parceiras e Correios, oferecendo entregas para todo o Brasil. O prazo de entrega varia conforme o CEP e a forma de envio escolhida. Você pode acompanhar seu pedido em tempo real através do código de rastreamento enviado por e-mail após o envio.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                💳 Quais formas de pagamento são aceitas?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Aceitamos pagamentos via cartão de crédito (com opção de parcelamento), Pix, boleto bancário e carteiras digitais. Todas as transações são processadas em ambiente seguro e criptografado, garantindo sua privacidade e segurança.
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <H1 style="color: red;"><a href="tailwind.html">IR PARA TAILWIND.HTML</a></H1>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
