@@ -1,0 +1,91 @@
+.hero-section {
+    align-items: center;
+    background-color: #00000040;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 160px 0px;
+    position: relative;
+  }
+  
+  .hero-section .content {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero-section .i-a-boa-de-hoje {
+    color: #ffffff;
+    font-family: "Raleway-SemiBold", Helvetica;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .hero-section .text-wrapper {
+    font-weight: 600;
+  }
+  
+  .hero-section .span {
+    font-family: "Raleway-Regular", Helvetica;
+    font-size: 24px;
+  }
+  
+  .hero-section .encontre-os-melhores {
+    color: #ffffff;
+    font-family: "Raleway-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 32px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .hero-section .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Raleway-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+  
+  .hero-section .text-wrapper-3 {
+    font-size: 32px;
+  }
+  
+  .hero-section .CTA-button {
+    align-items: center;
+    background-color: #574ae2;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 16px 64px;
+    position: relative;
+  }
+  
+  .hero-section .div {
+    color: #ffffff;
+    font-family: "Raleway-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-top: -1.00px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
