@@ -16,3 +16,4 @@ lerArquivo(caminho)
 .then(linhas => linhas.join (','))
 .then (conteudo => `O valor final é: ${conteudo}`)
 .then(console.log)
+//só pra checar se foi
