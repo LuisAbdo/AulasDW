@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritados</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #574AE2;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      width: 100%;
+    }
+
+    .font-bold {
+      font-weight: 400;
+    }
+  </style>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#272032]">
+    <nav class="bg-[#1A1423] px-8 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo + Links (esquerda) -->
+      <div class="flex items-center space-x-8">
+        <a href="#" class="text-white text-lg font-bold">I a Boa?</a>
+
+        <!-- Links principais -->
+        <div class="hidden md:flex space-x-4">
+          <a href="../index.html" class="nav-link text-white px-3 py-2">Página Inicial</a>
+          <a href="../pages/sobre.html" class="nav-link text-white px-3 py-2">Sobre o Projeto</a>
+          <a href="../pages/desenvolvedores.html" class="nav-link text-white px-3 py-2">Desenvolvedores</a>
+        </div>
+      </div>
+
+      <!-- Botões (direita) -->
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="../pages/autenticacao/cadastrar-usuario.html"
+          class="text-white hover:text-[#574AE2] border border-white hover:border-[#574AE2] px-4 py-2 rounded transition-all">Cadastre-se</a>
+        <a href="../pages/autenticacao/entrar.html"
+          class="text-white bg-[#574AE2] hover:bg-[#3A2EC1] px-6 py-2 rounded transition-all mr-4">Entre</a>
+      </div>
+    </div>
+  </nav>
+</body>
+
+    <!-- Título -->
+    <div class="text-center">
+        <h2 style="color: white;" class="text-[48px]">Favoritos</h2>
+        <p style="color: white;">Veja os Rolês e as Categorias que você favoritou</p>
+    </div>
+
+    <!-- Container principal com Cards à esquerda e Categorias à direita -->
+  <div class="px-8 py-8">
+    <div class="flex gap-8 p-6 items-start"><!-- <-- adicionado items-start aqui -->
+        <!-- Coluna dos Cards -->
+        <section class="flex flex-col gap-6 w-2/3">
+            <p style="color: white;">Rolês Favoritados</p>
+            <!-- Card 1 -->
+            <div class="flex w-full h-[144px] rounded overflow-hidden shadow">
+                <div class="w-[183px] h-[144px] bg-gray-300"></div><!-- altura corrigida aqui -->
+                <div class="flex-1 bg-[#3C3746] text-white p-4">
+                    <h3 class="text-xl font-bold">Show ao Vivo</h3>
+                    <p class="text-sm mt-2">Data: 16/05/2025</p>
+                    <p class="text-sm">Categoria: Música</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex w-full h-[144px] rounded overflow-hidden shadow">
+                <div class="w-[183px] h-[144px] bg-gray-300"></div><!-- altura corrigida aqui -->
+                <div class="flex-1 bg-[#3C3746] text-white p-4">
+                    <h3 class="text-xl font-bold">Show ao Vivo</h3>
+                    <p class="text-sm mt-2">Data: 16/05/2025</p>
+                    <p class="text-sm">Categoria: Música</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex w-full h-[144px] rounded overflow-hidden shadow">
+                <div class="w-[183px] h-[144px] bg-gray-300"></div><!-- altura corrigida aqui -->
+                <div class="flex-1 bg-[#3C3746] text-white p-4">
+                    <h3 class="text-xl font-bold">Show ao Vivo</h3>
+                    <p class="text-sm mt-2">Data: 16/05/2025</p>
+                    <p class="text-sm">Categoria: Música</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flex w-full h-[144px] rounded overflow-hidden shadow">
+                <div class="w-[183px] h-[144px] bg-gray-300"></div><!-- altura corrigida aqui -->
+                <div class="flex-1 bg-[#3C3746] text-white p-4">
+                    <h3 class="text-xl font-bold">Show ao Vivo</h3>
+                    <p class="text-sm mt-2">Data: 16/05/2025</p>
+                    <p class="text-sm">Categoria: Música</p>
+                </div>
+            </div>
+        </section>
+
+            <!-- Coluna de Categorias -->
+             
+            <aside class="w-1/3 flex flex-col gap-3">
+                <p style="color: white;">Rolês Favoritados</p>
+                <!-- Categoria-->
+                <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #DB2763;">
+                          <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                   <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+
+                <!-- Categoria -->
+                <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #574AE2;">
+                         <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                  <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+
+                <!-- Categoria -->
+                <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #80FF91;">
+                        <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                    <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+                <!--Categoria-->
+                 <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #FFD83E;">
+                         <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                  <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+                <!-- Categoria -->
+                     <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #00A8FF;">
+                         <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                  <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                  
+                </div>
+                         <!-- Categoria-->
+                <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #DB2763;">
+                          <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                   <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+
+                <!-- Categoria -->
+                <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #574AE2;">
+                         <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                  <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+
+                <!-- Categoria -->
+                <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #80FF91;">
+                        <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                    <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+                <!--Categoria-->
+                 <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #FFD83E;">
+                         <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                  <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+                <!-- Categoria -->
+                     <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #00A8FF;">
+                         <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                  <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                  
+                </div>
+                          <!-- Categoria-->
+                <div class="w-[373px] h-[48px] bg-[#3C3746] rounded shadow flex items-center justify-between px-4">
+                    <div class="flex items-center gap-2" style="color: #DB2763;">
+                          <i class="fa-solid fa-martini-glass"></i>
+                        <span>Padrão</span>
+                    </div>
+                   <button><i class="fa-solid fa-heart" style="color: #ffffff;"></i></button>
+                </div>
+                
+                     
+                  
+                
+            </aside>
+        </div>
+    </div>
+
+
+
+ <!-- Footer -->
+    <footer class="bg-[#110E15] py-8">
+        <div class="container mx-auto px-4">
+            <!-- Conteúdo principal -->
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0 lg:h-[120px]">
+                <!-- Esquerda - Logo -->
+                <div class="flex items-center justify-center h-full">
+                    <span class="text-white text-2xl font-bold">I a Boa?</span>
+                </div>
+
+                <!-- Centro - Links -->
+                <div class="flex items-center justify-center h-full">
+                    <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-white">
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Link Footer 1</a>
+                        <span class="text-gray-500 hidden sm:inline">|</span>
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Link 2</a>
+                        <span class="text-gray-500 hidden sm:inline">|</span>
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">Terceiro link</a>
+                        <span class="text-gray-500 hidden sm:inline">|</span>
+                        <a href="#" class="hover:text-[#574AE2] transition-colors text-sm sm:text-base">4 link</a>
+                    </div>
+                </div>
+
+                <!-- Direita - Redes Sociais -->
+                <div class="flex flex-col items-center justify-center h-full">
+                    <h3 class="text-white mb-3 text-sm sm:text-base">Nos siga nas redes sociais!</h3>
+                    <div class="flex justify-center space-x-4 sm:space-x-6">
+                        <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-[#574AE2] text-lg sm:text-xl transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linha divisória -->
+            <div class="border-t border-gray-700 w-full sm:w-3/4 mx-auto my-6"></div>
+
+            <!-- Direitos reservados -->
+            <div class="text-center text-gray-400 text-xs sm:text-sm">
+                Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
