@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!--A logo vem aqui  -->
+</head>
+
+<body>
+    <nav class="bg-zinc-900 px-8 py-4">
+        <div class="flex justify-between items-center w-full">
+            <a href="" class="text-white text-lg font bold">Brands</a>
+
+            <div class="flex justify-between w-full">">
+                <div class="hidden w-full md:flex space-x-4">
+                    <a href="" class="text-white hover:bg-lime-600/20px px-3 py-2 rounded">home</a>
+                    <a href="" class="text-white hover:bg-lime-600/20px px-3 py-2 rounded">services</a>
+                    <a href="" class="text-white hover:bg-lime-600/20px px-3 py-2 rounded">about</a>
+                    <a href="" class="text-white hover:bg-lime-600/20px px-3 py-2 rounded">contact</a>
+                    <a href="" class="text-white hover:bg-lime-600/20px px-3 py-2 rounded">home</a>
+                </div>
+            </div>
+            <div class="flex gap-3">
+                <div class="hidden md:block hover:text-zinc-900">
+                    <a href="" class="text-white border-1  px-4 py-2 rounded">Cadastre-se</a>
+                </div>
+                <div class="md:hidden">
+
+                </div>
+                <div class="hidden md:block">
+                    <a href="" class="text-white bg-[#DB2763] px-4 py-2 rounded">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Versão Mobile -->
+    <div id="mobile-menu" class="hidden bg-zinc-900 w-1/2 float-end at-2 me-2 py-4 rounded-md shadow-lg ">
+        <div class="flex flex-col items-center text-center text-white space-y-4 px-4">
+            <a href="" class="w-full text-white hover:bg-lime-600/20px px-3 py-2 rounded">home</a>
+            <a href="" class="w-full text-white hover:bg-lime-600/20px px-3 py-2 rounded">services</a>
+            <a href="" class="w-full text-white hover:bg-lime-600/20px px-3 py-2 rounded">about</a>
+            <a href="" class="w-full text-white hover:bg-lime-600/20px px-3 py-2 rounded">contact</a>
+            <a href="" class="w-full  text-white hover:bg-lime-600/20px px-3 py-2 rounded">home</a>
+        </div>
+    </div>
+    <!--JavaScript-->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.getElementsByClassName('fa-bars')[0].addEventListener('click', function () {
+            if (this.classList.contains('fa-bars')) {
+                this.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                this.classList.replace('fa-xmark', 'fa-bars');
+            }
+        })
+    </script>
+</body>
+
+</html>
